@@ -15,6 +15,7 @@
 #  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 #  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #  SOFTWARE.
+#  Author: coursertail@163.com
 
 import sys
 import console
@@ -24,13 +25,13 @@ import traceback
   web project with a build file. For it's working correctly, project's  directory has some rules.
 """
 
-def _main(blade_path) :
+def _main(xipath) :
 	pass
 
-def main(blade_path):
+def main(xipath):
     exit_code = 0
     try:
-        exit_code = _main(blade_path)
+        exit_code = _main(xipath)
     except SystemExit as se:
     	exit_code = se.exit_code
     except KeyboardInterrupt as ke:
